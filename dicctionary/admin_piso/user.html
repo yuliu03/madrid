@@ -1,0 +1,54 @@
+
+<!DOCTYPE HTML>  
+<html>
+<head>
+</head>
+<body>  
+
+
+<h2>PHP Form Validation Example</h2>
+<!-- <form method="post" action="control.php" oninput="x.value=parseInt(precio.value)">  --> 
+<form method="post" action="control.php" oninput="x.value=parseInt(precio.value)"> 
+  calle: <input type="text" name="name">
+  <br><br>
+  portal: <input type="number" value="0" name="email">
+  <br><br>
+  planta: <input type="number" value="0" name="planta">
+  <br><br>
+   puerta: <input type="text" name="puerta" value="A">
+  <br><br>
+ <!--  <input type="range" id="a" name="a" value="50">
+  100 + -->
+  precio: <input type="number" id="b" name="precio" value="0">
+  <!-- <output name="x" for="precio"></output> -->
+  <br><br>
+   Codigo Postal: <input type="number" id="b" name="Codigo_Postal" value="">
+  <!-- <output name="x" for="precio"></output> -->
+  <br><br>
+   otro1: <input type="text" name="otro1">
+  <br><br>
+   otro2: <input type="text" name="otro2">
+  <br><br>
+  <!--supongo en php se usa zona para acceder datos-->
+  <select name="zona">
+  <optgroup label="Norte">
+    <option value="moncloa" >moncloa</option>
+    <option value="Fuenlabrada">Fuenlabrada</option>
+  </optgroup>
+  <optgroup label="Sur">
+    <option value="parla">parla</option>
+    <option value="Centro">Centro</option>
+  </optgroup>
+</select>
+   <br><br>
+   
+  Gender:
+  <input type="radio" name="gender" value="female">Female
+  <input type="radio" name="gender" value="male">Male
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+</form>
+
+
+</body>
+</html>

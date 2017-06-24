@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html><title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+#texto{
+  height: 200px; 
+  width:70%;
+  text-align: center;
+  margin: auto;
+}
+
+
+
+
+</style>
+
+<head>
+
+</head>
+<body>
+
+
+  <div class="w3-container" id="contenedor1">
+   <div class="w3-bar w3-light-grey" id="botones">
+    <div class="w3-dropdown-hover"  >
+      <button  id="boton1" class="w3-button w3-bar-item w3-white" style="width:325%">Dropdown</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-black w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-teal w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-red w3-button">Link 3</a>
+      </div>
+    </div>
+    <button id="boton2" class="w3-bar-item w3-button w3-white w3-right " style="width:25%" ><a href="catalogo.html" target="_blank">Catalogo</a></button>
+    <button id="boton3"  class="w3-bar-item w3-button w3-white w3-right" style="width:25%">Button</button>
+    <button id="boton4"  class="w3-bar-item w3-button w3-white w3-right" style="width:25%">Button</button>
+  </div>
+</div>
+
+
+<!-- w3-pale-green-->
+<div class="w3-panel "  id="texto">
+  <div >
+    <p>
+      La cada vez más exitosa celebración de las fiestas nos ha empujado a centrar nuestros esfuerzos en ofrecerles unos catálogos totalmente renovados en productos y diseño. Estos nuevos catálogos están a la altura de los mejores catálogos de Europa. Siendo fieles a nuestro estilo continuamos caracterizando y mejorando la calidad fotográfica de nuestros productos.
+
+      Detrás de los catálogos se reúne un grupo de diseñadoras especializadas en crear y representar gráficamente las necesidades que la empresa tiene como objetivos. Así pues cada catálogo está realizado con una temática y diseño exclusivo.
+    </p>
+
+
+    <!-- Product grid -->
+    <div class="w3-content w3-display-container">
+      <div class="w3-row w3-border">
+        <div class="w3-third w3-container ">
+          <img src="w3images/Rio-2-Official-Trailer-3-40.jpg" alt="Norway" style="width:100%">
+          <div class="w3-container w3-center">
+            <button class="button"  onclick="displayData(0,1)">Mas informacion</button>
+          </div>
+        </div>
+        <div class="w3-third w3-container ">
+          <img src="w3images/Rio-2-Official-Trailer-3-40.jpg" alt="Norway" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>The Troll's tongue in Hardanger, Norway</p>
+          </div>
+        </div>
+        <div class="w3-third w3-container ">
+          <img src="w3images/Rio-2-Official-Trailer-3-40.jpg" alt="Norway" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>The Troll's tongue in Hardanger, Norway</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="descripcion">
+      <div id="1" style="visibility:hidden"><h1>DISFRACES</h1>
+        <p>El catálogo de disfraces es la joya de la corona. El éxito de ventas en los últimos años nos ha permitido poder invertir mucho esfuerzo en “la fábrica de ideas”.Con este catálogo podrán deleitarse con un sinfín de ideas atrevidas. Año tras año tratamos de dar un vuelco radical al catálogo de disfraces.</p></div>
+      </div>
+      <!-- segunda linea-->
+      <div class="w3-content w3-display-container">
+        <div class="w3-row w3-border">
+          <div class="w3-third w3-container ">
+            <img src="w3images/Rio-2-Official-Trailer-3-40.jpg" alt="Norway" style="width:100%">
+          </div>
+          <div class="w3-third w3-container ">
+            <img src="w3images/Rio-2-Official-Trailer-3-40.jpg" alt="Norway" style="width:100%">
+            <div class="w3-container w3-center">
+              <p>The Troll's tongue in Hardanger, Norway</p>
+            </div>
+          </div>
+          <div class="w3-third w3-container ">
+            <img src="w3images/Rio-2-Official-Trailer-3-40.jpg" alt="Norway" style="width:100%">
+            <div class="w3-container w3-center">
+              <p>The Troll's tongue in Hardanger, Norway</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+
+  function displayData(last,nuevo) {
+   // document.getElementById(last).style.visibility="hidden";
+    document.getElementById(nuevo).style.visibility="visible";
+  }
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

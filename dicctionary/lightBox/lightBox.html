@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+
+img{
+  height: 200px;
+  width: 200px;
+}
+
+
+
+  
+</style>
+
+<body>
+  <div >
+    <img id="img">
+  </div>
+ 
+
+
+<button onclick="siguiente()">next</button>
+<p id="text"></p>
+<p id="num"></p>
+<p id="result"></p>
+</body>
+
+ <script type="text/javascript">
+ var img="img";
+ var num=0;
+ var extension=".jpg";
+ var foto='';
+ foto=img.concat(num);
+ document.getElementById("text").innerHTML = foto;
+ foto=foto.concat(extension);
+ document.getElementById("result").innerHTML = foto;
+ document.getElementById("img").src=foto;
+
+</script>
+
+
+<script>
+var pre=0;
+
+function siguiente() {
+  pre=num;
+  var show="img";
+  num=(num+1);
+  document.getElementById("num").innerHTML = num;
+
+  num=num%4;
+  document.getElementById("result").innerHTML = num;
+  show=show.concat(num); 
+
+   foto='';
+   foto=img.concat(num);
+
+ document.getElementById("text").innerHTML = foto;
+ foto=foto.concat(extension);
+ document.getElementById("result").innerHTML = foto;
+ document.getElementById("img").src=foto;
+
+}
+ 
+</script>
+
+
+
+
+    
+</body>
+</html>

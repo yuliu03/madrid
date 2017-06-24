@@ -1,0 +1,110 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+      <style type ="text/css">
+      
+     img{
+      width: 50px;
+      height: 50px;
+      
+      }
+  /*     
+      #img1{
+      margin-top: 75px;
+      margin-left: 250px;
+      border: 1px solid red;
+      }
+      #img2{
+      margin-top: 125px;
+      margin-left: 380px;
+      border: 1px solid yellow;
+      }
+      #img3{
+      margin-top: 100px;
+      margin-left: 120px;
+
+      border: 1px solid green;
+      }
+      #img4{
+      margin-top: 150px;
+      margin-left: 250px;
+      border: 1px solid grey;
+      }
+      
+      #img1,#img2,#img3,#img4{
+      position: absolute;
+      }*/
+      
+      #bloque1,#bloque2,#bloque3,#bloque4{
+      border: 1px solid green;
+      }
+      
+      .panel{
+      width: 50%;
+      }
+      
+      </style>
+              <title>Titulo</title>
+    </head>
+
+
+  <body>
+
+        <div class ="panel panel-default">
+                         
+            <div id    ="bloque1">
+            <div class ="text">I see you!1</div> 
+                         
+            <img  src  ="bruja.jpg" id="img1">
+            </div>
+                         
+                         
+                         <div id    ="bloque2">
+                         <div class ="text">I see you!2</div> 
+                         <img  src  ="bruja.jpg" id="img2">        
+                         </div>
+                         
+                         <div id    ="bloque3">
+                         <div class ="text">I see you!3</div>
+                         
+                         <img  src  ="bruja.jpg" id="img3">
+                         
+                         </div>
+                         <div id    ="bloque4">
+                         <div class ="text">I see you!4</div> 
+                         <img  src  ="bruja.jpg" id="img4">
+                         </div>
+                         
+                         
+                         </div>
+  
+
+  <button onclick="myMove()">Start Animation</button>
+  
+  <script> 
+  
+function myMove() {
+  var elem = document.getElementById("bloque1");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      console.log(pos);
+    //  elem.style.top = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+  
+  
+  </script> 
+  </body>
+  </html>
+
+
+    

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	
+	img{
+    width: 100px;
+    height: 100px;
+}
+
+
+#img1{
+    border: 1px solid black;
+    margin-top: 60px;
+    margin-left: 100px;
+
+
+}
+
+</style>
+	<title></title>
+</head>
+<body>
+<button type="button"
+onclick="mover()" >
+Click Me!</button>
+ <div id="img1">
+        
+            <img  src="bruja.jpg">
+            <div class="text">I see you!</div>
+        
+  </div>
+<button type="button" onclick="clearInterval(myVar)">stop</button>
+"document.getElementById('id1').style.color = 'red'"
+<button onclick="clearInterval(myVar2)">Stop time</button>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+
+
+<script> 
+this.origenY=document.getElementById("img1").style.marginTop;
+this.origenX=document.getElementById("img1").style.marginLeft;
+this.y=0;
+this.x=0;
+this.t=0;
+document.getElementById("demo").innerHTML =20%36;
+
+ var myVar;
+function mover() {
+		 myVar= setInterval(mover2 ,1000);
+}
+
+function mover2(){
+	this.x=x+0.1;
+	this.x=x%(2*(Math.PI));
+	this.y=Math.sin(x);
+	
+document.getElementById("demo").innerHTML ="x es "+x;
+document.getElementById("demo2").innerHTML ="y es "+y;
+nuevoY=(origenY+y)+"px";
+nuevoX=(origenX+x)+"px";
+document.getElementById("demo3").innerHTML ="pos x: "+nuevoX;
+document.getElementById("demo4").innerHTML ="pos y: "+nuevoY;
+
+	document.getElementById("img1").style.marginTop=nuevoY;
+	document.getElementById("img1").style.marginLeft=nuevoX;
+	this.t++;
+	if(t==100){
+		clearInterval(myVar);
+	}
+}
+
+//var myVar2 = setInterval(myTimer ,1000);
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script> 
+</body>
+</html>
+
+

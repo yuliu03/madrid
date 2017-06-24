@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+    #calculadora{
+        /*border: 1px solid blue; */
+        width: 30%; 
+        background-color: #FAFAFA;
+        color: green;
+    }
+
+    #varible1{
+        width: 33%;
+        
+       /* margin-right: 100px;
+       margin-left: 0px;*/
+   }
+
+   #varible2{
+    width: 33%;
+
+        /*margin-left: 100px;
+        margin-right: 0px;*/
+    }
+
+    #varible3{
+        width: 33%;
+
+        
+    }
+
+    #resultado{
+    /*   border: 1px solid red; */
+       padding-top: 10px;
+       margin-top: 0px
+       clear: both;
+   }
+
+   output{
+    padding-top-top: 30px;
+/*    border: 1px solid red;
+*/    background-color: white;
+    color: black;
+
+   }
+
+   p{
+    margin-top: 5px;
+    font-size: 0.8em;
+}
+
+
+#boton_ejecuta{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-style: inset;
+    border-width: 1px;
+    color: green;
+} 
+</style>
+
+<body>
+  <form id="calculadora" name="calc">
+    <div  class="panel panel-default" >
+        <div class="panel-heading">
+            <h2 style=" text-align: center;">Calcular</h2>   
+        </div>
+
+        <hr>
+
+        <div class="panel-body">
+          
+             <center>
+                <div class ="panel panel-default" id="varible1" ">
+                    <center>
+                    <label>CAPITAL DE PRESTAMO</label>
+                      <input type="Text" name="capital" value="0" size="10">
+                      <br>
+                      <p></p>
+                  </center>
+
+              </div>
+          </center>
+          <center>
+            <div class ="panel panel-default"  id="varible2" >
+             <center>
+             <label>INTERES</label>
+                <input type="Text" name="interes" value="0" size="10">
+                <p></p>
+            </center>
+        </div>
+    </center>
+
+    <center>
+        <div class ="panel panel-default"  id="varible3" >
+            <center>
+            <label>Plazo</label>
+                <input  type="Text" name="plazo" value="0" size="10">
+                <p></p>
+            </center>
+
+        </div>
+    </center>
+</div>
+
+
+
+
+
+
+    <div class="panel-footer">
+    <hr>
+    <center>
+        <div class ="panel panel-default" id="resultado" >
+        <label> CUOTA_MENSUAL </label>
+        <output type="Text" name="resultado" value="0" size="12"> 
+        </div>
+        euros
+
+        <div id="boton">
+            <input id="boton_ejecuta" type="Button" name="" value=" calucla " onclick="calcula()">
+        </div>
+    </div>
+</center>
+
+</div>
+</form>
+
+
+<footer>
+   
+</footer>
+</div>
+<script>
+    function calcula(){
+        var capital = document.calc.capital.value;
+        var interes = eval((document.calc.interes.value)/12/100);
+        var plazo = eval(document.calc.plazo.value*12); 
+        var numerador=eval(Math.pow((1+interes),plazo)*interes);
+        var denominador=eval(Math.pow((1+interes),plazo)-1);
+        var result = eval(capital*(numerador/denominador));
+        document.calc.resultado.value = result;
+    }
+</script> 
+</body>
+</html>

@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Ultra');
+
+p#texto{
+	font-family: 'Lobster', cursive;
+}
+
+p#texto2{
+	font-family: 'Ultra', serif;
+}

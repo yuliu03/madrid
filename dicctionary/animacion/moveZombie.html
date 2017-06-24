@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+  img{
+      width: 50px;
+      height: 50px;
+     
+      }
+</style>
+<body>
+
+<p>
+<button id="botonMove" onclick="myMove()">Z</button>
+</p> 
+                           
+     
+                      
+<div id ="container">
+ <img  src  ="p1.png" id="img4">
+<!-- <div id ="animate"></div> -->
+</div>
+
+<script>
+function myMove() {
+  document.getElementById("botonMove").disabled=true;
+  var elem = document.getElementById("img4");   
+  var pos = 0;
+  var n=0;
+  var id = setInterval(frame, 150);
+  function frame() {
+    if (pos == 350) {
+      document.getElementById("botonMove").disabled=false;
+      clearInterval(id);
+    } else {
+      pos++;
+      n++; 
+      //elem.style.marginTop = pos + 'px'; 
+      elem.style.marginLeft = pos + 'px'; 
+      elem.src = 'p'+(n%4+1)+'.png'; 
+     
+    }
+  }
+}
+
+</script>
+
+</body>
+</html>

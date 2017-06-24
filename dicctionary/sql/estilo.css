@@ -1,0 +1,27 @@
+#contenedor {
+  width: 100%;
+  border: 1px solid blue;
+}
+#cabecera {
+	border: 1px solid red;
+}
+#menu {
+	border: 1px solid pink;
+  float: right;
+  width: 25%;
+ 
+}
+#contenido {
+	border: 1px solid black;
+  	float: left;
+  	width: 70%;
+}
+#pie {
+	border: 1px solid gray;
+  clear: both;
+}
+
+#panel{
+	background-color: gray;
+}
+
