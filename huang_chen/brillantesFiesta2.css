@@ -21,7 +21,7 @@ footer {
 #cuadro {
     height: 50%;
     width: 50%;
-    float:
+    
 }
 
 .btn-group {
@@ -36,7 +36,7 @@ footer {
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
-    font-size: 16px;
+    font-size: 32px;
     cursor: pointer;
     float: left;
 }
@@ -45,26 +45,38 @@ footer {
     text-decoration: underline;
 }
 
-
+li{
+    font-size: 30px;
+}
 
 #section1 {
     padding-top: 50px;
     height: 500px;
-    color: #fff;
-    background-color: #1E88E5;
+   /* color: #fff;
+   /* background-color: white;*/
 }
 
 #section2 {
     padding-top: 50px;
     height: 500px;
-    color: #fff;
-    background-color: #1E88E5;
+    /*color: #fff;
+   /* background-color: white;*/
 }
 
 img{
     width: 100px;
     height: 100px;
 }
+
+#imgA{
+    width: 80px;
+    height: 80px;
+}
+
+#band{   
+    font-size: 30px;
+}
+
 
 #img1{
    

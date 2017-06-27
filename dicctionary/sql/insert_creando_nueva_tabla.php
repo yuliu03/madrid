@@ -14,12 +14,12 @@
  $n='liu';
  $t='';
  $sql = "INSERT INTO casa (planta, puerta, precio,codigo_postal,calle,zona,otro1)
- VALUES ('7','B','1000000','12345','eduardo barreiros','moncloa',"."'".$n."'".")";
+ VALUES ('9','B','1000000','12345','eduardo barreiros','moncloa',"."'".$n."'".")";
 
  if ($conn->query($sql) === TRUE) {
  	echo "New record created successfully";
     /////
- 	$sql = "SELECT id FROM casa WHERE planta=7";
+ 	$sql = "SELECT id FROM casa WHERE planta=9";
  	$result = $conn->query($sql);
 
  	if ($result->num_rows > 0) {

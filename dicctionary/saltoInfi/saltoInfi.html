@@ -1,0 +1,40 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+    	img{
+    		margin-top: 40px;
+    	}
+		
+
+    </style>
+
+</head>
+
+<body>
+		<img id="x" src="p1.png">	
+		<!-- <p id="x">hahahah</p> -->
+</body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#x").hover(
+		  function() {
+		  	console.log("hola");
+		  	var x=$(this);
+		  	console.log(x);
+		  	x.animate({marginTop: '5px'}, 1000);
+		    // $(this).css("marginTop","10")
+		  }, function() {
+		  	var x=$(this);
+		  	console.log("adios");
+		  	x.animate({marginTop: '40px'}, 1000);
+		    //$(this).css("marginTop","40")
+		  }
+		);
+	});
+
+
+</script>
+
+</html>
