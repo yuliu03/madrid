@@ -128,10 +128,10 @@ p{
     border: none;
     border-radius: 0;
     display:inline-block;
-   /* border: 5px solid green;*/
     width: 25%;
     height: 25%;
     margin: 20px;
+    float: left;
   }
   .thumbnail img {
     width:100%;
@@ -146,26 +146,36 @@ p{
 /*  background-image: url("./imagen/tasa.jpg");*/
   width: 100%;
   height: 100%;
-  border: 5px solid red;
+ /* border: 5px solid red;*/
  }
 
-
+#publicidad1 img{
+ /* border: 5px solid blue;*/
+  width: 50%;
+  float: left;
+}
 
 
  /*/////////////*/
  #bloque_cal{
     float: right;
-     border: 1px solid blue;
-     margin-right: 2%;
+     /*border: 1px solid blue;*/
+     color: green;
+     margin-right: 0%;
      width: 33%;
      height: 100%;
+     /* background-color: #5CA5F8;*/
+    background: -webkit-linear-gradient(left top, white, PowderBlue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, white, PowderBlue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, white, PowderBlue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, white, PowderBlue); /* Standard syntax (must be last) */
 }
 
 
   #calculadora{
        position: relative;
         width: 100%;
-        background-color: #FAFAFA;
+      
         height: 100%;
        /* box-shadow: 10px 10px 5px #888888;*/
         margin: 0px;
@@ -175,45 +185,88 @@ p{
     #calculadora input{
       display: block;
       margin-left: 15%;
-      margin-top: 10%;
+      margin-top: 1%;
+      margin-bottom: 10%;
     }
 
-    #calculadora #boton{
-     border: 1px solid blue;
+    #calculadora #boton_ejecuta{
+       margin-bottom: 5%;
+    }
+   
+
+    #calculadora output{
+      margin-top: 0px;
+     /* border: 1px solid red;*/
+      font-size: 20px;
+       background: -webkit-linear-gradient(left top, white, PowderBlue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, white, PowderBlue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, white, PowderBlue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, white, PowderBlue); /* Standard syntax (must be last) */
+
+    }
+
+    #calculadora #boton_ejecuta{
+    /*  border: 1px solid blue;*/
+      padding: 0px;
+      width: 50%;
+      height: 100%;
+      border-radius: 25px;
     }
 
 
+
+#bloque_reg{
+  clear: both;
+  margin-top: 10px;
+  padding-top: 10px;
+/* border: 1px solid green;
+*/}
 
 #registra{
       /*  border: 1px solid blue;*/ 
-        clear: both;
+        
         background-color: #FAFAFA;
         width: 100%;
        /* float: left;
-        box-shadow: 10px 10px 5px #888888;
-        margin: 10px;*/
+        box-shadow: 10px 10px 5px #888888;*/
+
     }
 
 #registra h2{
   margin-bottom: 3%;
 }
+
+
+
+
   #registra center label{
     margin-left: 2%;
     margin-right: 0%;
  }
-   #registra textarea{
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 5%;
-    height: 50%;
-    width: 80%;
-   } 
+  
+
+  #registra textarea{
+  
+  width: 600px;
+  height: 120px;
+  border: 3px solid #cccccc;
+  padding: 5px;
+  font-family: Tahoma, sans-serif;
+  background-position: bottom right;
+ 
+  } 
 
 #registra h3{
    margin-left: 10%;
 }
 
 
+#envia{
+  margin-top: 1%;
+   margin-bottom: 1%;
+  width: 33%;
+  font-size: 20px;
+}
 
   .pisos{
     clear: both;

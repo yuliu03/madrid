@@ -82,6 +82,7 @@
   <div id="img2">
       <img  src="./imagen/tasa.jpg">
   </div>
+
       <div id="bloque_cal">
      <form id="calculadora" name="calculadora">
             <h2 style=" text-align: center;">Calcular</h2>   
@@ -93,14 +94,18 @@
              
             <label>Plazo</label>
                 <input  type="Text" name="plazo" value="0" size="50">
-                
-        <label> CUOTA_MENSUAL </label>
-        <output type="Text" name="resultado" value="0" size="50"> 
-      
 
-        <div id="boton">
-            <input id="boton_ejecuta" type="Button" name="" value=" Calucla " onclick="calcula()">
-        </div>
+            
+           <center> <input id="boton_ejecuta" type="Button" name="" value=" Calucla " onclick="calcula()"></center>
+              
+      
+        <label > CUOTA_MENSUAL </label>
+        <output type="Text" name="resultado" value="" size="30">0.0</output> 
+       
+<!--         <div id="resultado">0</div>
+ -->      
+
+       
   </form>
   
 </div>
@@ -118,8 +123,8 @@
 
 
 
-
-<form id="registra" name="calc">
+<div id="bloque_reg">
+  <form id="registra" name="calc">
         
             <h2 style=" text-align: center;">Contacto</h2>  
 
@@ -140,42 +145,57 @@
 
             <br>
 
-            <h3 >notas</h3>
+            
+            
             <center>
-                <textarea name="comment" form="usrform">Enter text here...</textarea>
-            </center>
+<textarea name="styled-textarea" id="styled" onfocus="this.value=''; setbg('#e5fff3');" onblur="setbg('white')">Enter your comment here...</textarea>            </center>
 
-        <div id="boton">
-            <input id="boton_ejecuta" type="Button" name="" value=" Envia " onclick="">
-        </div>
+      
+<!--             <input id="boton_ejecuta" type="Button" name="" value=" Envia " onclick="">
+ -->      
+          <center><button id="envia" class="w3-button w3-blue">Envia</button></center>  
+          
 
 </form>
-
-
-
-
-<div class="pisos">
-  <center>
-  <div class="thumbnail">
-        <a href="./imagen/imagen1.jpg" target="_blank">
-          <img src="./imagen/imagen1.jpg" alt="Nature" >
-          <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p> 
-        </a>
-  </div>
-  <div class="thumbnail">
-        <a href="./imagen/imagen1.jpg" target="_blank">
-          <img src="./imagen/imagen1.jpg" alt="Nature" >
-          <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p> 
-        </a>
-  </div>
-  <div class="thumbnail">
-        <a href="./imagen/imagen1.jpg" target="_blank">
-          <img src="./imagen/imagen1.jpg" alt="Nature" >
-          <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p> 
-        </a>
-  </div>
-  </center>
+  
 </div>
+
+
+
+
+ <center>
+<div class="pisos">
+ 
+  <div class="thumbnail">
+        <a href="./imagen/imagen1.jpg" target="_blank">
+          <img src="./imagen/imagen1.jpg" alt="Nature" >
+          <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p> 
+        </a>
+  </div>
+  <div class="thumbnail">
+        <a href="./imagen/imagen1.jpg" target="_blank">
+          <img src="./imagen/imagen1.jpg" alt="Nature" >
+          <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p> 
+        </a>
+  </div>
+  <div class="thumbnail">
+        <a href="./imagen/imagen1.jpg" target="_blank">
+          <img src="./imagen/imagen1.jpg" alt="Nature" >
+          <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p> 
+        </a>
+  </div>
+  
+  <div class="thumbnail">
+        <a href="./imagen/imagen1.jpg" target="_blank">
+          <img src="./imagen/imagen1.jpg" alt="Nature" >
+          <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p> 
+        </a>
+  </div>
+
+  
+
+</div>
+</center>
 
 <!-- <div id="publicidad" >
   <div>
@@ -338,7 +358,15 @@
         var denominador=eval(Math.pow((1+interes),plazo)-1);
         var result = eval(capital*(numerador/denominador));
         document.calculadora.resultado.value = result;
+        //document.getElementById("resultado").innerHTML=result;
+
+
     }
+
+    function setbg(color)
+      {
+      document.getElementById("styled").style.background=color
+      }
 </script>
 
 
